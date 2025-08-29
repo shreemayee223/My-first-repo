@@ -1,0 +1,35 @@
+public class Cunsumer {
+    private String consumerName ;
+    private int consumerID;
+    private double units ;
+    private double units ;
+    private double billAmount ;
+     
+    public Consumer(String name,int id ,double units ,doublebillAmount){
+        this.consumerName = name ;
+        this.consumerID = id ;
+        this.units = units ;
+        this.billAmount = billAmount ; 
+    }
+    public String getConsumerName() {
+        return consumerName ;
+    }
+    public int getConsumerID() {
+        return ConsumerID ;
+    }
+    public double getUnits() {
+        return units ;
+    }
+    public double getbillAmount;() {
+        return billAmount ;
+    }
+    
+    public void displayBill() {
+        system.out.println("\n---Electricity Bill---") ;
+        system.out.println("ConsumerID :" + consumerID) ;
+        system.out.println("ConsumerName : " +consumerName) ;
+        system.out.println("UnitsConsumed : " + units) ;
+        system.out.println("Total Bill : " + billAmount) ;
+        system.out.println("--");
+    }
+}
