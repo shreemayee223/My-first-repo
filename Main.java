@@ -1,4 +1,9 @@
 import java.util.*;
+
+import mypackage.Billcalculator;
+import mypackage.consumer;
+import mypackage.DBHandler;
+
 public class Main {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
@@ -24,9 +29,9 @@ public class Main {
                     System.out.print("Enter Units Consumed: ");
                     double units = sc.nextDouble();
 
-                    double billAmount = BillCalculator.calculateBill(units);
+                    double billAmount = Billcalculator.calculateBill(units);
 
-                    Consumer consumer = new Consumer(name, id, units, billAmount);
+                    consumer consumer = new consumer(name, id, units, billAmount);
 
                     
                     consumer.displayBill();
@@ -37,8 +42,8 @@ public class Main {
 
                 case 2:
                     System.out.println("\n--- Saved Bills from Database ---");
-                    List<Consumer> consumers = DBHandler.readFromDB();
-                    for (Consumer c : consumers) {
+                    List<consumer> consumers = DBHandler.readFromDB();
+                    for (consumer c : consumers) {
                         c.displayBill();
                     }
                     break;
@@ -53,6 +58,6 @@ public class Main {
         } while (choice != 3);
 
         sc.close();
-    }
+    }    
 }
 
