@@ -1,11 +1,12 @@
-public class Cunsumer {
-    private String consumerName ;
-    private int consumerID;
-    private double units ;
+package mypackage;
+
+public class consumer {
+     String consumerName ;
+     int consumerID;
     private double units ;
     private double billAmount ;
      
-    public Consumer(String name,int id ,double units ,doublebillAmount){
+    public consumer(String name,int id ,double units ,double billAmount){
         this.consumerName = name ;
         this.consumerID = id ;
         this.units = units ;
@@ -15,21 +16,21 @@ public class Cunsumer {
         return consumerName ;
     }
     public int getConsumerID() {
-        return ConsumerID ;
+        return consumerID ;
     }
     public double getUnits() {
         return units ;
     }
-    public double getbillAmount;() {
+    public double getbillAmount() {
         return billAmount ;
     }
     
     public void displayBill() {
-        system.out.println("\n---Electricity Bill---") ;
-        system.out.println("ConsumerID :" + consumerID) ;
-        system.out.println("ConsumerName : " +consumerName) ;
-        system.out.println("UnitsConsumed : " + units) ;
-        system.out.println("Total Bill : " + billAmount) ;
-        system.out.println("--");
+        System.out.println("\n---Electricity Bill---") ;
+        System.out.println("ConsumerID :" + consumerID) ;
+        System.out.println("ConsumerName : " +consumerName) ;
+        System.out.println("UnitsConsumed : " + units) ;
+        System.out.println("Total Bill : " + billAmount) ;
+        System.out.println("--");
     }
 }

@@ -1,4 +1,6 @@
-public class BillCalculator {
+package mypackage;
+
+public class Billcalculator {
     public static double calculateBill(double units) {
         double amount = 0;
         if (units <= 100) {
